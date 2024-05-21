@@ -1,0 +1,40 @@
+.money-container {
+  display: flex;
+  flex-direction: column;
+}
+.money-details-container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  min-width: 300px;
+  background-color: #ecfccb;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.light-green {
+  background-color: #ecfccb;
+}
+.light-blue {
+  background-color: #cffafe;
+}
+.light-violet {
+  background-color: #ede9fe;
+}
+.transaction-image {
+  width: 65px;
+  height: 65px;
+}
+.your-balance {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #475569;
+  margin-left: 30px;
+}
+.balance {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #475569;
+  margin-top: 0px;
+  margin-left: 30px;
+}

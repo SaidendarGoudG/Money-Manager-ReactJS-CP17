@@ -1,0 +1,27 @@
+.history-list-container {
+  display: flex;
+  flex-direction: column;
+}
+.history-list-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+.delete-button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-img {
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  border: none;
+  outline: none;
+}
+.line {
+  border: 1px solid #d7dfe9;
+  width: 100%;
+}
