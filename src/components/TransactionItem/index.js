@@ -20,6 +20,7 @@ const TransactionItem = props => {
             className="delete-button"
             type="button"
             onClick={onDeleteTransaction}
+            data-testid="delete"
           >
             <img
               className="delete-img"
