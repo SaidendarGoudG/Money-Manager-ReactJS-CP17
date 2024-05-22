@@ -19,7 +19,7 @@ const transactionTypeOptions = [
 
 class MoneyManager extends Component {
   state = {
-    transactionList: [],
+    transactionsList : [],
     title: '',
     amount: '',
     optionId: transactionTypeOptions[0].optionId,
@@ -53,7 +53,7 @@ class MoneyManager extends Component {
     }
 
     this.setState(prevState => ({
-      transactionList: [...prevState.transactionList, newTransaction],
+      transactionsList: [...prevState.transactionsList, newTransaction],
       title: '',
       amount: '',
       optionId: transactionTypeOptions[0].optionId,
@@ -113,7 +113,7 @@ class MoneyManager extends Component {
   }
 
   render() {
-    const {transactionList, title, amount, optionId} = this.state
+    const {transactionsList, title, amount, optionId} = this.state
 
     const balanceAmount = this.getBalance()
     const incomeAmount = this.getIncome()
@@ -186,7 +186,7 @@ class MoneyManager extends Component {
                 <p className="history-type">Type</p>
               </li>
               <hr className="line" />
-              {transactionList.map(eachTransaction => (
+              {transactionsList.map(eachTransaction => (
                 <TransactionItem
                   key={eachTransaction.id}
                   transactionDetails={eachTransaction}
