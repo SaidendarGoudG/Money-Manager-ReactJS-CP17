@@ -2,6 +2,12 @@
   min-height: 100vh;
   padding: 10px;
 }
+@media screen and (min-width: 768px) {
+  .app-container {
+    min-height: 100vh;
+    padding: 100px;
+  }
+}
 .money-manager-container {
   background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
   background-size: cover;
@@ -27,6 +33,12 @@
 .add-forms-container {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .add-forms-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .add-transaction {
   display: flex;
